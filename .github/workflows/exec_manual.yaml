@@ -1,18 +1,17 @@
 # CI De Nível 1 - Disparo manual a partir de um clique no botão "Build"
 
-# nome do 'pipeline'
+# Nome do 'pipeline'
 name: 'Execução Manual'
 
 on:
   workflow_dispatch:
 
 jobs:
-
-  e2e-test:
+  unit-test:
     
     runs-on: ubuntu-latest
-    steps:
 
+    steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
